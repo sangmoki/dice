@@ -1,57 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#009000"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+
+<layout>
 
     <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
         android:layout_width="match_parent"
-        android:layout_height="200dp">
+        android:layout_height="match_parent"
+        android:background="#009000"
+        tools:context=".MainActivity"
+        android:orientation="vertical">
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:textColor="@color/black"
-            android:gravity="center"
-            android:layout_marginTop="50dp"
-            android:layout_margin="20dp"
-            android:textStyle="bold"
-            android:text="인생은 주사위 한 방에 가는 것 아니겠습니까?">
-        </TextView>
+            android:layout_height="200dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_marginTop="50dp"
+                android:layout_margin="20dp"
+                android:textStyle="bold"
+                android:text="인생은 주사위 한 방에 가는 것 아니겠습니까?">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <ImageView
+                android:id="@+id/dice1"
+                android:src="@drawable/dice_1"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/dice2"
+                android:src="@drawable/dice_1"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>/
+
+        <Button
+            android:id="@+id/diceStartBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="50dp"
+            android:background="@color/black"
+            android:text="인생 고고"
+            android:textColor="@color/white" />
+
+
     </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="200dp">
-
-        <ImageView
-            android:src="@drawable/dice_1"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:layout_weight="1"/>
-
-        <ImageView
-            android:src="@drawable/dice_1"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:layout_weight="1"/>
-
-    </LinearLayout>/
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_margin="50dp"
-        android:background="@color/black"
-        android:text="인생 고고"
-        android:textColor="@color/white" />
-
-
-</LinearLayout>
+</layout>
