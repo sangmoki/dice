@@ -27,7 +27,7 @@
                 android:layout_margin="20dp"
                 android:textStyle="bold"
                 android:fontFamily="@font/bmjua"
-                android:text="인생은 주사위 한 방에 가는 것 아니겠습니까?">
+                android:text="주사위 굴리기 !">
             </TextView>
         </LinearLayout>
 
